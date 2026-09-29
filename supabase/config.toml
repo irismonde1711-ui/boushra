@@ -1,0 +1,6 @@
+# Minimal Supabase CLI config — only used to deploy the Edge Function.
+project_id = "boushra"
+
+[functions.cleanup-old-orders]
+# Called by pg_cron with a shared secret (CLEANUP_SECRET), not a user JWT.
+verify_jwt = false

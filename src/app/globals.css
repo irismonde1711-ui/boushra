@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colors are RGB channels so Tailwind opacity modifiers (text-fg/60, border-fg/10) work.
+   The storefront is black & gold like the Boushra logo; .admin-root re-maps the same
+   tokens to a light theme so every component reads well in the dashboard too. */
+:root {
+  --c-bg: 9 9 9;
+  --c-surface: 19 19 18;
+  --c-surface-2: 29 28 26;
+  --c-fg: 245 240 230;
+  --c-muted: 170 163 152;
+  --c-ink: 10 10 10;
+  --c-gold: 233 186 12;
+  --c-gold-soft: 245 213 102;
+  --c-gold-deep: 176 137 6;
+  --c-danger: 239 83 80;
+  --c-success: 74 196 120;
+}
+
+.admin-root {
+  --c-bg: 246 244 239;
+  --c-surface: 255 255 255;
+  --c-surface-2: 241 238 231;
+  --c-fg: 22 21 19;
+  --c-muted: 110 105 97;
+  --c-gold: 168 128 4;
+  --c-gold-soft: 196 152 12;
+  --c-gold-deep: 128 96 0;
+  --c-danger: 200 40 40;
+  --c-success: 22 140 70;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: rgb(var(--c-bg));
+  color: rgb(var(--c-fg));
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgb(var(--c-gold));
+  color: rgb(var(--c-ink));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--c-bg));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--c-gold-deep));
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-10;
+  }
+
+  .label {
+    @apply font-body font-semibold uppercase tracking-[0.3em] text-[11px] text-gold;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-body font-semibold uppercase tracking-[0.16em] text-xs px-7 py-4 transition-colors duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-ink hover:bg-gold-soft;
+  }
+  .btn-ghost {
+    @apply btn border border-fg/25 text-fg hover:border-gold hover:text-gold;
+  }
+  .btn-dark {
+    @apply btn bg-fg text-bg hover:bg-gold hover:text-ink;
+  }
+
+  .input {
+    @apply w-full bg-surface border border-fg/15 px-4 py-3 text-sm text-fg placeholder:text-muted/60 outline-none transition-colors focus:border-gold;
+  }
+  .field-label {
+    @apply block text-[11px] uppercase tracking-[0.18em] text-muted mb-2;
+  }
+
+  .gold-text {
+    @apply bg-gradient-to-r from-gold-soft via-gold to-gold-deep bg-clip-text text-transparent;
+  }
+}

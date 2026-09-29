@@ -1,0 +1,22 @@
+{
+  "name": "Boushra — Administration",
+  "short_name": "Boushra Admin",
+  "description": "Gestion des commandes, produits et avis de Boushra Services Textile Beauté",
+  "id": "/espace-boushra",
+  "start_url": "/espace-boushra/dashboard",
+  "scope": "/espace-boushra",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "fr",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Commandes", "url": "/espace-boushra/dashboard/commandes", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Ajouter un produit", "url": "/espace-boushra/dashboard/produits/nouveau", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

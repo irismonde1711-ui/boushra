@@ -1,0 +1,417 @@
+[
+  {
+    "slug": "parure-plastron-doree",
+    "name": "Parure plastron dorée",
+    "category": "bijoux",
+    "price": 18000,
+    "featured": true,
+    "sold": false,
+    "options": [],
+    "description": "Parure complète au fini doré : plastron ciselé, boucles d'oreilles et bague assorties. Idéale pour les mariages, baptêmes et grandes cérémonies.",
+    "images": [
+      "/images/produits/parure-plastron-doree.webp"
+    ],
+    "name_en": "Gold statement necklace set",
+    "description_en": "Complete gold-finish set: engraved statement necklace with matching earrings and ring. Perfect for weddings, naming ceremonies and big occasions."
+  },
+  {
+    "slug": "parure-fleurs-dorees",
+    "name": "Parure fleurs dorées",
+    "category": "bijoux",
+    "price": 15000,
+    "featured": true,
+    "sold": false,
+    "options": [],
+    "description": "Collier, bracelet et bague aux motifs floraux dorés. Une parure féminine et raffinée qui illumine toutes vos tenues.",
+    "images": [
+      "/images/produits/parure-fleurs-dorees.webp"
+    ],
+    "name_en": "Gold flower jewellery set",
+    "description_en": "Necklace, bracelet and ring with gold floral motifs. A feminine, refined set that lights up every outfit."
+  },
+  {
+    "slug": "ensemble-indien-dore",
+    "name": "Ensemble indien doré",
+    "category": "bijoux",
+    "price": 20000,
+    "featured": true,
+    "sold": false,
+    "options": [],
+    "description": "Ensemble de style indien : double collier à perles dorées, grandes boucles d'oreilles et bague ajourée.",
+    "images": [
+      "/images/produits/ensemble-indien-dore.webp"
+    ],
+    "name_en": "Gold Indian-style set",
+    "description_en": "Indian-style set: double gold bead necklace, large earrings and an openwork ring."
+  },
+  {
+    "slug": "collier-torque-creoles-dorees",
+    "name": "Collier torque & créoles dorées",
+    "category": "bijoux",
+    "price": 9000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Collier torque en fils dorés superposés accompagné de ses créoles assorties. Élégant et moderne.",
+    "images": [
+      "/images/produits/collier-torque-creoles-dorees.webp"
+    ],
+    "name_en": "Gold torque necklace & hoops",
+    "description_en": "Layered gold wire torque necklace with matching hoop earrings. Elegant and modern."
+  },
+  {
+    "slug": "parure-collier-perles-dorees",
+    "name": "Parure collier perles dorées",
+    "category": "bijoux",
+    "price": 12000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Collier de perles dorées avec pendentifs et boucles d'oreilles pendantes assorties.",
+    "images": [
+      "/images/produits/parure-collier-perles-dorees.webp"
+    ],
+    "name_en": "Gold bead necklace set",
+    "description_en": "Gold bead necklace with pendants and matching drop earrings."
+  },
+  {
+    "slug": "bracelet-jonc-dore-cisele",
+    "name": "Bracelet jonc doré ciselé",
+    "category": "bijoux",
+    "price": 5000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Bracelet jonc large au fini doré, finement ciselé. Se porte seul ou en accumulation.",
+    "images": [
+      "/images/produits/bracelet-jonc-dore-cisele.webp"
+    ],
+    "name_en": "Engraved gold bangle",
+    "description_en": "Wide gold-finish bangle with fine engraving. Wear it alone or stacked."
+  },
+  {
+    "slug": "bracelet-manchette-coeur-doree",
+    "name": "Bracelet manchette cœur",
+    "category": "bijoux",
+    "price": 6000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Manchette dorée à maillons travaillés, ornée d'un cœur. Un bijou délicat pour tous les jours.",
+    "images": [
+      "/images/produits/bracelet-manchette-coeur-doree.webp"
+    ],
+    "name_en": "Heart cuff bracelet",
+    "description_en": "Gold cuff with detailed links and a heart charm. A delicate everyday piece."
+  },
+  {
+    "slug": "bague-bracelet-manchette-dores",
+    "name": "Bague & manchette dorées",
+    "category": "bijoux",
+    "price": 7500,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Duo bague et bracelet manchette dorés aux motifs gravés, pour une touche de caractère.",
+    "images": [
+      "/images/produits/bague-bracelet-manchette-dores.webp"
+    ],
+    "name_en": "Gold ring & cuff",
+    "description_en": "Gold ring and cuff bracelet duo with engraved patterns, for a touch of character."
+  },
+  {
+    "slug": "boucles-oreilles-mosaique-dorees",
+    "name": "Boucles d'oreilles mosaïque",
+    "category": "bijoux",
+    "price": 3500,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Boucles d'oreilles rondes dorées à éclats colorés, légères et lumineuses.",
+    "images": [
+      "/images/produits/boucles-oreilles-mosaique-dorees.webp"
+    ],
+    "name_en": "Gold mosaic earrings",
+    "description_en": "Round gold earrings with colourful accents, light and luminous."
+  },
+  {
+    "slug": "perruque-carre-rouge",
+    "name": "Perruque carré rouge",
+    "category": "perruques",
+    "price": 25000,
+    "featured": true,
+    "sold": false,
+    "options": [],
+    "description": "Perruque coupe carré couleur rouge intense, coiffée dans notre salon. Un look audacieux prêt à porter.",
+    "images": [
+      "/images/produits/perruque-carre-rouge.webp"
+    ],
+    "name_en": "Red bob wig",
+    "description_en": "Bold red bob wig, styled in our salon. A striking look, ready to wear."
+  },
+  {
+    "slug": "perruque-ondulee-noire",
+    "name": "Perruque ondulée noire",
+    "category": "perruques",
+    "price": 30000,
+    "featured": true,
+    "sold": false,
+    "options": [],
+    "description": "Perruque mi-longue aux ondulations naturelles, couleur noire. Volume et mouvement garantis.",
+    "images": [
+      "/images/produits/perruque-ondulee-noire.webp"
+    ],
+    "name_en": "Black wavy wig",
+    "description_en": "Mid-length black wig with natural waves. Volume and movement guaranteed."
+  },
+  {
+    "slug": "perruque-lisse-noire",
+    "name": "Perruque lisse noire",
+    "category": "perruques",
+    "price": 30000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Perruque lisse noire mi-longue avec baby hair travaillés. Un rendu naturel et soigné.",
+    "images": [
+      "/images/produits/perruque-lisse-noire.webp"
+    ],
+    "name_en": "Black straight wig",
+    "description_en": "Mid-length straight black wig with styled baby hair. A natural, polished finish."
+  },
+  {
+    "slug": "perruque-carre-lisse-lace",
+    "name": "Perruque carré lisse lace",
+    "category": "perruques",
+    "price": 28000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Carré lisse avec lace frontal pour une raie naturelle. Facile à porter et à coiffer.",
+    "images": [
+      "/images/produits/perruque-carre-lisse-lace.webp"
+    ],
+    "name_en": "Straight lace bob wig",
+    "description_en": "Straight bob with a lace front for a natural parting. Easy to wear and style."
+  },
+  {
+    "slug": "perruque-carre-noir-frange",
+    "name": "Perruque carré noir",
+    "category": "perruques",
+    "price": 25000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Carré plongeant noir aux reflets bleutés, coiffé et prêt à porter.",
+    "images": [
+      "/images/produits/perruque-carre-noir-frange.webp"
+    ],
+    "name_en": "Black bob wig",
+    "description_en": "Black angled bob with blue-toned shine, styled and ready to wear."
+  },
+  {
+    "slug": "duo-perruques-lace",
+    "name": "Perruques lace frontal",
+    "category": "perruques",
+    "price": 35000,
+    "featured": false,
+    "sold": false,
+    "options": [
+      "Carré lisse",
+      "Bouclée longue"
+    ],
+    "description": "Perruques lace frontal disponibles en carré lisse ou en longueur bouclée. Précisez votre modèle.",
+    "images": [
+      "/images/produits/duo-perruques-lace.webp"
+    ],
+    "name_en": "Lace-front wigs",
+    "description_en": "Lace-front wigs available as a straight bob or long curly style. Tell us which model you want."
+  },
+  {
+    "slug": "gamme-capillaire-boushra",
+    "name": "Gamme capillaire Boushra",
+    "category": "soins",
+    "price": 10000,
+    "featured": true,
+    "sold": false,
+    "options": [],
+    "description": "La gamme capillaire Boushra : sérums et baumes pour nourrir, fortifier et faire briller vos cheveux.",
+    "images": [
+      "/images/produits/gamme-capillaire-boushra.webp"
+    ],
+    "name_en": "Boushra hair care range",
+    "description_en": "The Boushra hair care range: serums and balms to nourish, strengthen and add shine to your hair."
+  },
+  {
+    "slug": "baume-capillaire-boushra",
+    "name": "Baume capillaire Boushra",
+    "category": "soins",
+    "price": 3000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Baume capillaire Boushra aux ingrédients nourrissants, pour des cheveux doux et des pointes protégées.",
+    "images": [
+      "/images/produits/baume-capillaire-boushra.webp"
+    ],
+    "name_en": "Boushra hair balm",
+    "description_en": "Boushra hair balm with nourishing ingredients, for soft hair and protected ends."
+  },
+  {
+    "slug": "serviettes-hygieniques-angel-moon",
+    "name": "Serviettes hygiéniques Angel Moon",
+    "category": "soins",
+    "price": 1500,
+    "featured": false,
+    "sold": false,
+    "options": [
+      "Jour",
+      "Nuit"
+    ],
+    "description": "Serviettes hygiéniques Angel Moon, confort et protection au quotidien.",
+    "images": [
+      "/images/produits/serviettes-hygieniques-angel-moon.webp"
+    ],
+    "name_en": "Angel Moon sanitary pads",
+    "description_en": "Angel Moon sanitary pads, comfort and protection every day."
+  },
+  {
+    "slug": "racines-encens-traditionnels",
+    "name": "Racines & encens traditionnels",
+    "category": "soins",
+    "price": 5000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Panier de racines et d'encens traditionnels pour parfumer la maison et les vêtements.",
+    "images": [
+      "/images/produits/racines-encens-traditionnels.webp"
+    ],
+    "name_en": "Traditional roots & incense",
+    "description_en": "A basket of traditional roots and incense to scent your home and clothes."
+  },
+  {
+    "slug": "sac-matelasse-vieux-rose",
+    "name": "Sac matelassé vieux rose + pochette",
+    "category": "sacs",
+    "price": 17500,
+    "featured": true,
+    "sold": false,
+    "options": [],
+    "description": "Sac à main matelassé couleur vieux rose, livré avec sa pochette assortie.",
+    "images": [
+      "/images/produits/sac-matelasse-vieux-rose.webp"
+    ],
+    "name_en": "Dusty-pink quilted bag + clutch",
+    "description_en": "Dusty-pink quilted handbag, sold with its matching clutch."
+  },
+  {
+    "slug": "sac-hobo-jaune-croco",
+    "name": "Sac hobo jaune effet croco",
+    "category": "sacs",
+    "price": 15000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Sac hobo souple jaune effet croco avec fermoir cadenas doré. Une pièce forte pour vos tenues.",
+    "images": [
+      "/images/produits/sac-hobo-jaune-croco.webp"
+    ],
+    "name_en": "Yellow croc-effect hobo bag",
+    "description_en": "Soft yellow croc-effect hobo bag with a gold padlock clasp. A statement piece for your outfits."
+  },
+  {
+    "slug": "sandales-talons-assorties",
+    "name": "Sandales à talons",
+    "category": "chaussures",
+    "price": 8000,
+    "featured": false,
+    "sold": false,
+    "options": [
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "description": "Sandales à talons, plusieurs modèles et coloris. Disponibles au détail et en gros — contactez-nous pour les quantités.",
+    "images": [
+      "/images/produits/sandales-talons-assorties.webp"
+    ],
+    "name_en": "Heeled sandals",
+    "description_en": "Heeled sandals in several styles and colours. Available retail and wholesale — contact us for quantities."
+  },
+  {
+    "slug": "mules-sandales-femme",
+    "name": "Mules & sandales femme",
+    "category": "chaussures",
+    "price": 6000,
+    "featured": false,
+    "sold": false,
+    "options": [
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "description": "Mules et sandales plates pour femme, nombreux coloris. Disponibles au détail et en gros.",
+    "images": [
+      "/images/produits/mules-sandales-femme.webp"
+    ],
+    "name_en": "Women's mules & sandals",
+    "description_en": "Flat mules and sandals for women, many colours. Available retail and wholesale."
+  },
+  {
+    "slug": "mocassins-velours-noirs-brodes",
+    "name": "Mocassins velours noirs brodés",
+    "category": "chaussures",
+    "price": 12000,
+    "featured": false,
+    "sold": false,
+    "options": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "description": "Mocassins en velours noir avec écusson brodé. Chics et confortables.",
+    "images": [
+      "/images/produits/mocassins-velours-noirs-brodes.webp"
+    ],
+    "name_en": "Embroidered black velvet loafers",
+    "description_en": "Black velvet loafers with an embroidered crest. Smart and comfortable."
+  },
+  {
+    "slug": "montre-bracelet-doree-trefle",
+    "name": "Ensemble montre & bracelets trèfle",
+    "category": "accessoires",
+    "price": 8000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Montre dorée et bracelets assortis aux trèfles rouges. Un ensemble coordonné plein d'éclat.",
+    "images": [
+      "/images/produits/montre-bracelet-doree-trefle.webp"
+    ],
+    "name_en": "Clover watch & bracelet set",
+    "description_en": "Gold watch with matching red-clover bracelets. A coordinated set full of sparkle."
+  },
+  {
+    "slug": "montre-rouge-bracelets-perles",
+    "name": "Montre rouge & bracelets perles",
+    "category": "accessoires",
+    "price": 7000,
+    "featured": false,
+    "sold": false,
+    "options": [],
+    "description": "Montre bracelet rouge accompagnée de bracelets en perles colorées.",
+    "images": [
+      "/images/produits/montre-rouge-bracelets-perles.webp"
+    ],
+    "name_en": "Red watch & beaded bracelets",
+    "description_en": "Red strap watch with colourful beaded bracelets."
+  }
+]
