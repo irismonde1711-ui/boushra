@@ -30,3 +30,6 @@ supabase/.temp
 
 # raw Instagram exports (curated, web-ready copies live in public/images)
 /source-photos
+
+# local Claude Code / editor settings
+/.claude
