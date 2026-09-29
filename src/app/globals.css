@@ -91,9 +91,6 @@ body {
   .btn-ghost {
     @apply btn border border-fg/25 text-fg hover:border-gold hover:text-gold;
   }
-  .btn-dark {
-    @apply btn bg-fg text-bg hover:bg-gold hover:text-ink;
-  }
 
   .input {
     @apply w-full bg-surface border border-fg/15 px-4 py-3 text-sm text-fg placeholder:text-muted/60 outline-none transition-colors focus:border-gold;

@@ -26,13 +26,12 @@ function mapProduct(row) {
 }
 
 const demoProducts = () =>
-  catalog.map(({ name_en, description_en, ...p }, i) => ({
+  catalog.map(({ name_en, description_en, ...p }) => ({
     ...p,
     nameEn: name_en || "",
     descriptionEn: description_en || "",
     id: p.slug,
     createdAt: null,
-    _order: i,
   }));
 
 export async function fetchAllProducts() {
@@ -45,28 +44,7 @@ export async function fetchAllProducts() {
   return (data || []).map(mapProduct);
 }
 
-export async function fetchProductsByCategory(category) {
-  if (!isSupabaseConfigured) return demoProducts().filter((p) => p.category === category);
-  const { data, error } = await supabase
-    .from("products")
-    .select("*")
-    .eq("category", category)
-    .order("created_at", { ascending: false });
-  if (error) throw error;
-  return (data || []).map(mapProduct);
-}
 
-export async function fetchFeaturedProducts(limit = 8) {
-  if (!isSupabaseConfigured) return demoProducts().filter((p) => p.featured).slice(0, limit);
-  const { data, error } = await supabase
-    .from("products")
-    .select("*")
-    .eq("featured", true)
-    .order("created_at", { ascending: false })
-    .limit(limit);
-  if (error) throw error;
-  return (data || []).map(mapProduct);
-}
 
 export async function fetchProductBySlug(slug) {
   if (!isSupabaseConfigured) return demoProducts().find((p) => p.slug === slug) || null;

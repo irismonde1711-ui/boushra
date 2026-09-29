@@ -2,7 +2,6 @@
 // French is the default and lives at the root (/boutique); English lives under /en.
 
 export const LOCALES = ["fr", "en"];
-export const DEFAULT_LOCALE = "fr";
 export const LOCALE_COOKIE = "NEXT_LOCALE";
 
 export const isLocale = (value) => LOCALES.includes(value);

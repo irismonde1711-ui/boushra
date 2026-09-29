@@ -41,7 +41,6 @@ const en = {
     cartDescription: "Your Boushra cart.",
     checkoutTitle: "Checkout",
     checkoutDescription: "Cash on delivery or advance payment — Boushra.",
-    notFoundTitle: "Page not found",
   },
 
   nav: {

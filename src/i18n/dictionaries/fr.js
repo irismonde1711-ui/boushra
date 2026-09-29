@@ -41,7 +41,6 @@ const fr = {
     cartDescription: "Votre panier Boushra.",
     checkoutTitle: "Finaliser ma commande",
     checkoutDescription: "Paiement à la livraison ou paiement anticipé — Boushra.",
-    notFoundTitle: "Page introuvable",
   },
 
   nav: {

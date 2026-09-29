@@ -10,8 +10,8 @@ export async function checkIsAdmin() {
 
 // Supabase logins are e-mail addresses; a plain username such as "admin" is mapped to
 // "admin@boushra.local" (the same mapping is used by scripts/setup-supabase.mjs).
-export const ADMIN_LOGIN_DOMAIN = "boushra.local";
-export const toLoginEmail = (login) => {
+const ADMIN_LOGIN_DOMAIN = "boushra.local";
+const toLoginEmail = (login) => {
   const value = login.trim().toLowerCase();
   return value.includes("@") ? value : `${value}@${ADMIN_LOGIN_DOMAIN}`;
 };

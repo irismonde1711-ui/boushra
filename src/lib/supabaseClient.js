@@ -18,7 +18,7 @@ export const supabase = createClient(
 export const PRODUCT_IMAGES_BUCKET = "products";
 export const PAYMENT_PROOFS_BUCKET = "payment-proofs";
 
-export class BackendNotConfiguredError extends Error {
+class BackendNotConfiguredError extends Error {
   constructor() {
     super("La base de données n'est pas encore connectée.");
     this.name = "BackendNotConfiguredError";
