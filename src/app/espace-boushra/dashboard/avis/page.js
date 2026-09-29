@@ -9,6 +9,7 @@ import { fetchAllReviews, deleteReview } from "@/lib/reviews";
 import { formatDate } from "@/lib/format";
 import { confirmDanger } from "@/lib/adminUi";
 import { useAdminI18n } from "@/i18n/AdminI18nProvider";
+import { localePath } from "@/i18n/config";
 
 export default function AdminReviewsPage() {
   const { t, dict, lang } = useAdminI18n();
@@ -106,7 +107,7 @@ export default function AdminReviewsPage() {
                 </div>
                 {review.productSlug ? (
                   <Link
-                    href={`${lang === "en" ? "/en" : ""}/produit/${review.productSlug}`}
+                    href={localePath(lang, `/produit/${review.productSlug}`)}
                     target="_blank"
                     className="text-xs text-gold hover:underline"
                   >

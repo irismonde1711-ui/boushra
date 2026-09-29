@@ -12,7 +12,7 @@ import ToasterProvider from "@/components/ui/ToasterProvider";
 import JsonLd from "@/components/ui/JsonLd";
 import { I18nProvider } from "@/i18n/I18nProvider";
 import { LOCALES, isLocale, getDictionary } from "@/i18n";
-import { localBusinessJsonLd } from "@/lib/seo";
+import { localBusinessJsonLd, absoluteUrl } from "@/lib/seo";
 import { SITE } from "@/config/site";
 
 export const dynamicParams = false;
@@ -33,9 +33,9 @@ export function generateMetadata({ params }) {
       siteName: SITE.fullName,
       locale: t.ogLocale,
       type: "website",
-      images: [{ url: SITE.ogImage, width: 1200, height: 630, alt: SITE.fullName }],
+      images: [{ url: absoluteUrl(SITE.ogImage), width: 1200, height: 630, alt: SITE.fullName }],
     },
-    twitter: { card: "summary_large_image", images: [SITE.ogImage] },
+    twitter: { card: "summary_large_image", images: [absoluteUrl(SITE.ogImage)] },
     formatDetection: { telephone: true },
   };
 }

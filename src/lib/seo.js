@@ -10,7 +10,8 @@ export function absoluteUrl(path = "/") {
 export function pageMetadata({ lang, title, description, path = "/", image, noindex = false }) {
   const t = getDictionary(lang);
   const img = absoluteUrl(image || SITE.ogImage);
-  const url = localePath(lang, path);
+  // Absolute URLs everywhere: a relative "/x" would drop the sub-path used on static hosting.
+  const url = absoluteUrl(localePath(lang, path));
   const fullTitle = title ? `${title} | ${SITE.name}` : t.meta.siteTitle;
   return {
     // Omitted (not undefined) on the homepage so the layout's default title applies.
@@ -18,7 +19,11 @@ export function pageMetadata({ lang, title, description, path = "/", image, noin
     description,
     alternates: {
       canonical: url,
-      languages: { fr: localePath("fr", path), en: localePath("en", path), "x-default": localePath("fr", path) },
+      languages: {
+        fr: absoluteUrl(localePath("fr", path)),
+        en: absoluteUrl(localePath("en", path)),
+        "x-default": absoluteUrl(localePath("fr", path)),
+      },
     },
     openGraph: {
       title: fullTitle,

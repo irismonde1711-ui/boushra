@@ -10,7 +10,7 @@ import { formatFCFA } from "@/lib/format";
 import { confirmDanger } from "@/lib/adminUi";
 import { ADMIN_BASE, CATEGORIES } from "@/config/site";
 import { useAdminI18n } from "@/i18n/AdminI18nProvider";
-import { localizeProduct } from "@/i18n";
+import { localizeProduct, localePath } from "@/i18n";
 
 export default function AdminProductsPage() {
   const { t, dict, lang } = useAdminI18n();
@@ -127,7 +127,7 @@ export default function AdminProductsPage() {
                         {item.images[0] && <Image src={item.images[0]} alt="" fill className="object-cover" sizes="44px" />}
                       </div>
                       <Link
-                        href={`${lang === "en" ? "/en" : ""}/produit/${item.slug}`}
+                        href={localePath(lang, `/produit/${item.slug}`)}
                         target="_blank"
                         className="font-medium hover:text-gold"
                       >
@@ -161,7 +161,7 @@ export default function AdminProductsPage() {
                   <td className="p-4">
                     <div className="flex items-center justify-end gap-4">
                       <Link
-                        href={`${ADMIN_BASE}/dashboard/produits/${item.id}`}
+                        href={`${ADMIN_BASE}/dashboard/produits/modifier?id=${item.id}`}
                         className="text-muted hover:text-fg"
                         aria-label={p.edit}
                         title={p.edit}

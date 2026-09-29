@@ -1,8 +1,12 @@
-// Service worker for the installable admin app (registered with scope /espace-boushra).
+// Service worker for the installable admin app (registered with scope <base>/espace-boushra).
 // Admin data always comes live from Supabase (cross-origin, never cached here); this
 // worker only keeps the app shell available so the installed app opens offline.
-const CACHE = "boushra-admin-v2";
-const SHELL = ["/espace-boushra", "/espace-boushra/dashboard", "/icons/icon-192.png", "/icons/icon-512.png"];
+// Paths are relative to where this file is served, so it works at the domain root
+// (Vercel) and under a sub-path (GitHub Pages: /boushra/).
+const CACHE = "boushra-admin-v3";
+const BASE = new URL("./", self.location).pathname; // "/" or "/boushra/"
+const ADMIN = `${BASE}espace-boushra`;
+const SHELL = [ADMIN, `${ADMIN}/dashboard`, `${BASE}icons/icon-192.png`, `${BASE}icons/icon-512.png`];
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -24,7 +28,7 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET" || url.origin !== self.location.origin) return;
 
   // Hashed build assets never change: cache-first.
-  if (url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/icons/")) {
+  if (url.pathname.startsWith(`${BASE}_next/static/`) || url.pathname.startsWith(`${BASE}icons/`)) {
     event.respondWith(
       caches.match(request).then(
         (hit) =>
@@ -40,7 +44,7 @@ self.addEventListener("fetch", (event) => {
   }
 
   // Admin pages: network-first, fall back to the last cached copy when offline.
-  if (request.mode === "navigate" && url.pathname.startsWith("/espace-boushra")) {
+  if (request.mode === "navigate" && url.pathname.startsWith(ADMIN)) {
     event.respondWith(
       fetch(request)
         .then((res) => {
@@ -48,9 +52,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE).then((c) => c.put(request, copy));
           return res;
         })
-        .catch(() =>
-          caches.match(request).then((hit) => hit || caches.match("/espace-boushra/dashboard"))
-        )
+        .catch(() => caches.match(request).then((hit) => hit || caches.match(`${ADMIN}/dashboard`)))
     );
   }
 });

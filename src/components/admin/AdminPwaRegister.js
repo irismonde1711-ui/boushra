@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { ADMIN_BASE } from "@/config/site";
+import { ADMIN_BASE, BASE_PATH } from "@/config/site";
 
 export default function AdminPwaRegister() {
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function AdminPwaRegister() {
     }
 
     navigator.serviceWorker
-      .register("/admin-sw.js", { scope: ADMIN_BASE })
+      .register(`${BASE_PATH}/admin-sw.js`, { scope: `${BASE_PATH}${ADMIN_BASE}` })
       .catch((err) => console.warn("Admin SW registration failed:", err));
   }, []);
 

@@ -19,6 +19,7 @@ import { logoutAdmin } from "@/lib/auth";
 import { ADMIN_BASE, SITE } from "@/config/site";
 import { useAdminI18n } from "@/i18n/AdminI18nProvider";
 import InstallAppButton from "./InstallAppButton";
+import { localePath } from "@/i18n/config";
 import AdminLanguageSwitcher from "./AdminLanguageSwitcher";
 
 const D = `${ADMIN_BASE}/dashboard`;
@@ -74,14 +75,14 @@ export default function AdminSidebar({ open, onClose }) {
               </Link>
             );
           })}
-          <a
-            href={lang === "en" ? "/en" : "/"}
+          <Link
+            href={localePath(lang, "/")}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 px-4 py-3 text-sm text-white/65 hover:bg-white/5 hover:text-white"
           >
             <FiExternalLink size={16} /> {t.nav.viewSite}
-          </a>
+          </Link>
         </nav>
 
         <div className="p-3 border-t border-white/10 space-y-1">

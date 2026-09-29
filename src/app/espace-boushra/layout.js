@@ -3,7 +3,7 @@ import { fontClasses } from "../fonts";
 import AdminPwaRegister from "@/components/admin/AdminPwaRegister";
 import ToasterProvider from "@/components/ui/ToasterProvider";
 import { AdminI18nProvider } from "@/i18n/AdminI18nProvider";
-import { SITE } from "@/config/site";
+import { SITE, BASE_PATH } from "@/config/site";
 
 export const metadata = {
   metadataBase: new URL(SITE.url),
@@ -11,10 +11,10 @@ export const metadata = {
     default: "Boushra Admin",
     template: "%s | Boushra Admin",
   },
-  manifest: "/manifest-admin.json",
+  manifest: `${BASE_PATH}/manifest-admin.json`,
   robots: { index: false, follow: false, nocache: true },
   appleWebApp: { capable: true, title: "Boushra Admin", statusBarStyle: "black-translucent" },
-  icons: { apple: "/icons/icon-192.png" },
+  icons: { apple: `${BASE_PATH}/icons/icon-192.png` },
 };
 
 export const viewport = {

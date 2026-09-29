@@ -31,6 +31,10 @@ export const SITE = {
 
 export const ADMIN_BASE = "/espace-boushra";
 
+// Sub-path the site is served from on static hosting (e.g. "/boushra" on GitHub Pages).
+// Next adds it to <Link> and router URLs itself; plain URLs (manifest, service worker) need it.
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const whatsappLink = (text = "") =>
   `https://wa.me/${SITE.whatsapp}${text ? `?text=${encodeURIComponent(text)}` : ""}`;
 
